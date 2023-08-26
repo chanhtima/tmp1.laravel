@@ -1,0 +1,42 @@
+.la-form-01-contact{
+    @apply container mt-8;
+    &-form{
+        @apply flex flex-wrap items-center justify-between -mx-6;
+        &-wh {
+            @apply w-full md:w-1/2 flex flex-col px-6 mb-6;
+            label{
+                @apply text-18 text-blue-400 font-semibold mb-1;
+            }
+            input{
+                @apply py-4 pl-4 rounded-xl shadow-md; 
+            }
+            textarea {
+                @apply py-4 pl-4 rounded-xl shadow-md; 
+            }
+        }
+    }
+    &-pdpa{
+        &-check{
+            @apply flex items-center mb-6;
+            input{
+                @apply mr-2;
+            }
+            label{
+                @apply text-blue-400;
+                a{
+                    @apply text-18 border-none font-semibold;
+                }
+            }
+        }
+    }
+    &-submit {
+        @apply mt-6 flex justify-center;
+        button{
+            @apply btn rounded-2xl bg-transparent border-none hover:bg-primary ;
+            img{
+                @apply w-8 h-8;
+            }
+        }
+    }
+
+}

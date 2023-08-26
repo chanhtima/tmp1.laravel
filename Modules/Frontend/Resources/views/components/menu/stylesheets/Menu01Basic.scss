@@ -1,0 +1,58 @@
+.co-menu-01-basic{
+   @apply drawer ;
+   &-dcontents{
+    @apply drawer-content  ;
+    label{
+        @apply text-20 cursor-pointer ;
+    }
+   }
+   &-sides{
+    @apply drawer-side z-[99] h-full;
+    ul{
+        @apply text-20 font-semibold   p-8 w-[15.5rem] md:w-[25rem] h-full ;
+        background: rgba(236, 117, 49, 0.95);
+          li{  @apply text-[#402800] hover:text-[#FAE6B1] mb-3 font-semibold;
+          
+        } 
+      
+    }
+    &-textX{
+      @apply absolute top-3 right-4 text-20 cursor-pointer;
+    }
+    &-active{
+        @apply text-[#FAE6B1] ;
+    }
+   }
+   &-fancyRadio{
+    
+      &-toggle{
+        @apply relative flex justify-center items-center py-4 px-0 bg-[#402800] w-24 h-10 rounded-full text-16;
+         input{ 
+            @apply hidden  ;
+         }
+      
+         input:checked + label{
+            @apply text-16 text-black;
+            &:after{
+         
+               @apply bg-[#FAE6B1] scale-100  flex items-center justify-center  ;
+            }
+         }
+         
+         label{ 
+        
+            @apply relative z-[100] w-6 h-6 text-center text-16 mx-auto text-white;
+            p{
+                @apply m-0 p-0;
+            }
+            &:after{
+                @apply absolute top-[-0.1rem] left-0 h-[1.75rem] rounded-full w-[1.75rem] z-[-1] ;
+               content: " ";
+
+            }
+         }
+      }
+   }
+   
+
+}

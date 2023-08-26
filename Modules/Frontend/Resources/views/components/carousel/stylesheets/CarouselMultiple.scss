@@ -1,0 +1,26 @@
+
+.la-bg-Carousel{
+    @apply -mx-5 max-h-full bg-[url('./img/BG-silde.png')] bg-no-repeat bg-bottom; 
+    background-size: 100% 50%;
+}
+.co-carousel-multi{
+    &-list{
+        @apply max-h-full h-full ;
+    }
+    .splide__pagination{
+        @apply justify-start  bottom-0 ;
+    }
+    .splide__pagination__page{
+        @apply bg-white mb-2;
+    
+    }
+    .splide__pagination__page.is-active{
+        @apply bg-secondary mr-3 ml-[-0.75rem] rounded-xl w-10 translate-x-3;
+    }
+    
+   
+}
+.splide-news{
+    @apply px-2;
+
+}

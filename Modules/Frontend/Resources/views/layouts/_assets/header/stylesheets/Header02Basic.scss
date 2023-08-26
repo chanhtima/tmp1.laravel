@@ -1,0 +1,10 @@
+.la-header-02-basic{
+    @apply sticky top-0 z-50 bg-white shadow-lg ;
+    &-navbar{
+        @apply container flex items-center justify-between px-6 sm:px-0 ;
+    }
+    img{
+        @apply w-12 md:w-16 py-4;
+    }
+
+}

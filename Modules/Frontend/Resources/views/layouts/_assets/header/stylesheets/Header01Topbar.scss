@@ -1,0 +1,56 @@
+.la-header-01-topbar{
+
+    &-Topber{
+        @apply flex bg-primary justify-end px-6 py-3;
+        a{
+          @apply pr-4;
+        }
+    }
+   &-navbar{
+    @apply drawer bg-white shadow-md  sticky top-0 px-6 py-2 z-50;
+    img{
+        @apply w-28;
+    }
+    input{
+        @apply drawer-toggle;
+    }
+    &-content{
+        @apply drawer-content flex flex-col ;
+        &-all{
+            @apply w-full navbar  ;
+        }
+        &-hidden{
+            @apply flex-none lg:hidden ;
+           
+        }
+        &-block{
+            @apply flex-none hidden lg:block;
+            ul{
+                @apply menu menu-horizontal text-18 font-semibold ;
+            }
+        }
+
+    }
+    &-logo{
+        @apply flex-1 px-2 mx-2;
+    }
+    &-side{
+        @apply drawer-side ;
+       
+        ul{
+            @apply menu p-4 w-80 h-full bg-base-100 text-18  z-50 font-semibold;
+        }
+        li{
+            @apply py-2;
+        }
+    }
+    button{
+        @apply bg-primary rounded-full w-10 h-10 flex items-center justify-center text-white text-18 font-semibold;
+    }
+
+
+    }
+
+     
+}
+

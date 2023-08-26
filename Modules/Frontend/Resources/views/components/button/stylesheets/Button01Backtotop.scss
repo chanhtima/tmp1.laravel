@@ -1,0 +1,9 @@
+.co-button-01-backtotop{
+  a{
+      @apply fixed z-40  bottom-8 right-5  shadow-xl rounded-full; 
+   } 
+   &-img{
+    @apply w-10 h-10 ;
+   }
+    
+}

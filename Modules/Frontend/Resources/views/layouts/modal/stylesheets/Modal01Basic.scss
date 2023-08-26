@@ -1,0 +1,20 @@
+.la-modal-01-basic{
+    @apply modal ;
+    &-box{
+        @apply modal-box w-11/12 max-w-xl py-8;
+        img{
+            @apply w-16 h-16 mx-auto mb-4;
+        }
+        p{
+            @apply  text-24 text-center;
+
+        }
+       
+    }
+    &-close{
+        @apply flex justify-end mt-2;
+        button{
+            @apply btn bg-primary text-16 font-semibold hover:bg-black hover:text-white;
+        }
+    }
+}

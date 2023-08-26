@@ -1,0 +1,26 @@
+.co-card-04-basic {
+  @apply relative;
+    img{
+        @apply rounded-2xl overflow-hidden aspect-1 w-full md:h-60  object-top object-cover;
+  }
+  &-detail{
+    @apply absolute bottom-1 max-w-full left-0 right-0  p-4;
+    a{
+    @apply line-clamp-2 text-16 xtn:text-18 ;
+    word-break: break-word
+    }
+    
+  }
+
+}
+
+.co-card-04-basic > div,.hover-up{
+  transition: all .25s;
+
+}
+.co-card-04-basic:hover> div:hover{
+  transform: translateY(-10px);
+}
+.hover-up:hover{
+  transform: translateY(-5px);
+}

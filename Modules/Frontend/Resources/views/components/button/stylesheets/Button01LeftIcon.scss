@@ -1,0 +1,9 @@
+.co-button-01-lefticon{
+    @apply flex  items-center;
+    button{
+        @apply ml-4 font-semibold text-18;
+    }
+    img{
+        @apply w-8 h-8 ;
+    }
+}

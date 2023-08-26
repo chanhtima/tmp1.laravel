@@ -1,0 +1,20 @@
+.la-pagination-01-basic{
+    @apply flex justify-center pb-8;
+  &-group{
+    @apply btn-group -mx-4;
+    button{
+        @apply px-3;
+    }
+    &-img{
+        @apply w-5 h-5 ;
+    }
+    &-active{
+        @apply  btn-active first-line:w-8 h-8 flex items-center justify-center bg-secondary rounded-full  font-semibold   ;
+
+    }
+    &-noactive{
+        @apply   w-8 h-8 flex items-center justify-center rounded-full hover:bg-secondary  mx-1  font-semibold;
+    }
+
+  }
+}
